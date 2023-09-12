@@ -45,104 +45,382 @@
     </script>
   </head>
   <body class="lato">
-    <header class="container mx-auto lg:px-16">
-        <!-- Navbar -->
-        <div class="navbar bg-base-100 text-white bg-[#F85559] rounded-full lg:px-10 py-3 my-7 mx-3">
+    <header class="container mx-auto px-3 lg:px-16">
+      <!-- Navbar -->
+      <div
+        class="navbar bg-base-100 text-white bg-[#F85559] rounded-full lg:px-10 py-3 my-7"
+      >
+        <div class="navbar-start hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-lg font-medium">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
 
-            <div class="navbar-start hidden lg:flex">
-                <ul class="menu menu-horizontal px-1 text-lg font-medium">
-                  <li><a>Home</a></li>
-                  <li><a>About Us</a></li>
-                  <li><a>Shop</a></li>
-                  <li><a>All Fruits</a></li>
-                </ul>
-              </div>
+        <div class="navbar-start lg:hidden">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-80 items-center gap-2">
+          <!-- <a class="btn btn-ghost normal-case text-xl navbar-start"></a> -->
+          <img class="w-10 lg:w-14" src="./images/logo.png" alt="" />
+          <h2 class="text-white text-3xl lg:text-4xl font-bold">Fruit Burst</h2>
+        </div>
+        <div class="navbar-end hidden md:flex">
+          <input
+            type="text"
+            placeholder="Search here"
+            class="input max-w-xs bg-white relative rounded-full text-black"
+          />
+          <i class="fa-solid fa-magnifying-glass absolute mr-5 text-black"></i>
+        </div>
+      </div>
 
-            <div class="navbar-start lg:hidden">
-              <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a>Home</a></li>
-                    <li><a>About Us</a></li>
-                    <li><a>Shop</a></li>
-                    <li><a>All Fruits</a></li>
-                </ul>
+      <!-- Banner Section Start -->
+      <div>
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="/images/banner1.png" class="w-full" />
+            <div class="absolute inset-0 bg-black opacity-40 rounded-lg"></div>
+            <div
+              class="absolute flex justify-between items-center gap-2 transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <div class="text-white text-center py-10">
+                <h1 class="text-2xl lg:text-7xl font-extrabold">
+                  Exotic tastes at your <br />
+                  doorstep
+                </h1>
+                <p class="lg:text-xl font-medium mt-1 lg:my-5">
+                  We supply highly quality organic products
+                </p>
+                <button
+                  class="scroll-py-2 lg:py-4 px-3 lg:px-7 mt-2 lg:mt-5 bg-[#F85559] rounded-lg lg:text-xl font-extrabold"
+                >
+                  Shop Now
+                </button>
               </div>
-            </div>
-            <div class="w-80 gap-3 items-center">
-                <!-- <a class="btn btn-ghost normal-case text-xl navbar-start"></a> -->
-                <img class="w-10 lg:w-14" src="./images/logo.png" alt="">
-                <h2 class="text-white text-3xl lg:text-4xl font-bold">Fruit Burst</h2>
-            </div>
-            <div class="navbar-end hidden md:flex">
-              <input type="text" placeholder="Search here" class="input max-w-xs bg-white relative rounded-full text-black" />
-              <i class="fa-solid fa-magnifying-glass absolute mr-5 text-black"></i>
+              <a href="#slide2" class="btn btn-circle">❯</a>
             </div>
           </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="/images/banner2.png" class="w-full" />
+            <div class="absolute inset-0 bg-black opacity-40 rounded-lg"></div>
+            <div
+              class="absolute flex justify-between items-center gap-2 transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <div class="text-white text-center py-10">
+                <h1 class="text-2xl lg:text-7xl font-extrabold">
+                  Exotic tastes at your <br />
+                  doorstep
+                </h1>
+                <p class="lg:text-xl font-medium mt-1 lg:my-5">
+                  We supply highly quality organic products
+                </p>
+                <button
+                  class="scroll-py-2 lg:py-4 px-3 lg:px-7 mt-2 lg:mt-5 bg-[#F85559] rounded-lg lg:text-xl font-extrabold"
+                >
+                  Shop Now
+                </button>
+              </div>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="/images/banner3.png" class="w-full" />
+            <div class="absolute inset-0 bg-black opacity-40 rounded-lg"></div>
+            <div
+              class="absolute flex justify-between items-center gap-2 transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <div class="text-white text-center py-10">
+                <h1 class="text-2xl lg:text-7xl font-extrabold">
+                  Exotic tastes at your <br />
+                  doorstep
+                </h1>
+                <p class="lg:text-xl font-medium mt-1 lg:my-5">
+                  We supply highly quality organic products
+                </p>
+                <button
+                  class="scroll-py-2 lg:py-4 px-3 lg:px-7 mt-2 lg:mt-5 bg-[#F85559] rounded-lg lg:text-xl font-extrabold"
+                >
+                  Shop Now
+                </button>
+              </div>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="/images/banner4.png" class="w-full" />
+            <div class="absolute inset-0 bg-black opacity-40 rounded-lg"></div>
+            <div
+              class="absolute flex justify-between items-center gap-2 transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <div class="text-white text-center py-10">
+                <h1 class="text-2xl lg:text-7xl font-extrabold">
+                  Exotic tastes at your <br />
+                  doorstep
+                </h1>
+                <p class="lg:text-xl font-medium mt-1 lg:my-5">
+                  We supply highly quality organic products
+                </p>
+                <button
+                  class="scroll-py-2 lg:py-4 px-3 lg:px-7 mt-2 lg:mt-5 bg-[#F85559] rounded-lg lg:text-xl font-extrabold"
+                >
+                  Shop Now
+                </button>
+              </div>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container mx-auto px-3 lg:px-16">
+      <!-- Deal of the day -->
+      <div class="my-10 lg:my-16">
+        <div class="lg:flex text-center lg:text-start px-7 lg:px-0 md:justify-between">
+          <div class="">
+            <h2 class="text-2xl md:text-5xl font-extrabold mt-3">Deal of the day</h2>
+            <p class="text-base text-[#12121299] font-normal lg:w-9/12 mt-6">
+              Contrary to popular belief, is not simply random text. It has roots in a
+              piece of classical Latin literature from 45 BC, making it over 2000 years
+              old.
+            </p>
+          </div>
+          <div class="flex justify-center gap-12 text-center mt-3">
+            <div>
+              <div class="flex items-center gap-2 md:gap-6">
+                <h2 class="text-2xl md:text-5xl font-extrabold">29</h2>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+              <p class="text-base text-[#12121299] font-normal mt-2 text-start">Days</p>
+            </div>
+            <div>
+              <div class="flex items-center gap-2 md:gap-6">
+                <h2 class="text-2xl md:text-5xl font-extrabold">15</h2>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+              <p class="text-base text-[#12121299] font-normal mt-2 text-start">Hours</p>
+            </div>
+            <div>
+              <div class="flex items-center gap-2 md:gap-6">
+                <h2 class="text-2xl md:text-5xl font-extrabold">25</h2>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+              <p class="text-base text-[#12121299] font-normal mt-2 text-start">
+                Minutes
+              </p>
+            </div>
+            <div>
+              <div class="flex items-center gap-2 md:gap-6">
+                <h2 class="text-2xl md:text-5xl font-extrabold">08</h2>
+              </div>
+              <p class="text-base text-[#12121299] font-normal mt-2 text-start">
+                Seconds
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Deal Card -->
+        <div class="grid grid-cols md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+          <div class="card bg-base-100 border-2 rounded-lg">
+            <figure class="px-10 pt-10">
+              <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-[#121212] text-2xl font-bold">
+                12.90$ - 18.85$
+              </h2>
+              <div class="border-t-2 bg-black w-full"></div>
+              <p class="text-[#12121299] text-base font-medium">Apples</p>
 
-          <!-- Banner Section Start -->
-          <div>
+              <div class="text-2xl mb-2">
+                <i class="fa-solid fa-star text-[#F85559]"></i>
+                <i class="fa-regular fa-star-half-stroke text-[#F85559]"></i>
+                <i class="fa-regular fa-star text-[#F85559]"></i>
+                <i class="fa-regular fa-star text-[#F85559]"></i>
+                <i class="fa-regular fa-star text-[#F85559]"></i>
+              </div>
 
-            <div class="carousel w-full">
-                <div id="slide1" class="carousel-item relative w-full">
-                  <img src="/images/banner1.png" class="w-full" />
-                  <div class="absolute inset-0 bg-black opacity-40"></div>
-                  <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle">❮</a> 
-                    <div class="text-white text-center py-10">
-                        <h1 class="text-2xl lg:text-7xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
-                        <p class="lg:text-xl font-medium mt-1 lg:my-5">We supply highly quality organic products</p>
-                        <button class="scroll-py-2 lg:py-4 px-3 lg:px-7 mt-2 lg:mt-5 bg-[#F85559] rounded-lg lg:text-xl font-extrabold">Shop Now</button>
-                    </div>
-                    <a href="#slide2" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide2" class="carousel-item relative w-full">
-                  <img src="/images/banner2.png" class="w-full" />
-                  <div class="absolute inset-0 bg-black opacity-40"></div>
-                  <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a> 
-                    <div class="text-white text-center py-10">
-                        <h1 class="text-2xl lg:text-7xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
-                        <p class="lg:text-xl font-medium mt-1 lg:my-5">We supply highly quality organic products</p>
-                        <button class="scroll-py-2 lg:py-4 px-3 lg:px-7 mt-2 lg:mt-5 bg-[#F85559] rounded-lg lg:text-xl font-extrabold">Shop Now</button>
-                    </div>
-                    <a href="#slide3" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide3" class="carousel-item relative w-full">
-                  <img src="/images/banner3.png" class="w-full" />
-                  <div class="absolute inset-0 bg-black opacity-40"></div>
-                  <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a> 
-                    <div class="text-white text-center py-10">
-                        <h1 class="text-2xl lg:text-7xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
-                        <p class="lg:text-xl font-medium mt-1 lg:my-5">We supply highly quality organic products</p>
-                        <button class="scroll-py-2 lg:py-4 px-3 lg:px-7 mt-2 lg:mt-5 bg-[#F85559] rounded-lg lg:text-xl font-extrabold">Shop Now</button>
-                    </div>
-                    <a href="#slide4" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide4" class="carousel-item relative w-full">
-                  <img src="/images/banner4.png" class="w-full" />
-                  <div class="absolute inset-0 bg-black opacity-40"></div>
-                  <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle">❮</a> 
-                    <div class="text-white text-center py-10">
-                        <h1 class="text-2xl lg:text-7xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
-                        <p class="lg:text-xl font-medium mt-1 lg:my-5">We supply highly quality organic products</p>
-                        <button class="scroll-py-2 lg:py-4 px-3 lg:px-7 mt-2 lg:mt-5 bg-[#F85559] rounded-lg lg:text-xl font-extrabold">Shop Now</button>
-                    </div>
-                    <a href="#slide1" class="btn btn-circle">❯</a>
+              <!-- Open the modal using ID.showModal() method -->
+              <button
+                class="text-lg font-bold text-[#F85559]"
+                onclick="my_modal_1.showModal()"
+              >
+                Details
+              </button>
+              <dialog id="my_modal_1" class="modal">
+                <div class="modal-box">
+                  <h3 class="font-bold text-lg">Hello!</h3>
+                  <p class="py-4">Press ESC key or click the button below to close</p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn">Close</button>
+                    </form>
                   </div>
                 </div>
+              </dialog>
+            </div>
+          </div>
+          <div class="card bg-base-100 border-2 rounded-lg">
+            <figure class="px-10 pt-10">
+              <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-[#121212] text-2xl font-bold">
+                12.90$ - 18.85$
+              </h2>
+              <div class="border-t-2 bg-black w-full"></div>
+              <p class="text-[#12121299] text-base font-medium">Apples</p>
+
+              <div class="text-2xl mb-2">
+                <i class="fa-solid fa-star text-[#F85559]"></i>
+                <i class="fa-regular fa-star-half-stroke text-[#F85559]"></i>
+                <i class="fa-regular fa-star text-[#F85559]"></i>
+                <i class="fa-regular fa-star text-[#F85559]"></i>
+                <i class="fa-regular fa-star text-[#F85559]"></i>
               </div>
 
+              <!-- Open the modal using ID.showModal() method -->
+              <button
+                class="text-lg font-bold text-[#F85559]"
+                onclick="my_modal_1.showModal()"
+              >
+                Details
+              </button>
+              <dialog id="my_modal_1" class="modal">
+                <div class="modal-box">
+                  <h3 class="font-bold text-lg">Hello!</h3>
+                  <p class="py-4">Press ESC key or click the button below to close</p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </div>
           </div>
-    </header>
-    <main></main>
+          <div class="card bg-base-100 border-2 rounded-lg">
+            <figure class="px-10 pt-10">
+              <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-[#121212] text-2xl font-bold">
+                12.90$ - 18.85$
+              </h2>
+              <div class="border-t-2 bg-black w-full"></div>
+              <p class="text-[#12121299] text-base font-medium">Apples</p>
+
+              <div class="text-2xl mb-2">
+                <i class="fa-solid fa-star text-[#F85559]"></i>
+                <i class="fa-regular fa-star-half-stroke text-[#F85559]"></i>
+                <i class="fa-regular fa-star text-[#F85559]"></i>
+                <i class="fa-regular fa-star text-[#F85559]"></i>
+                <i class="fa-regular fa-star text-[#F85559]"></i>
+              </div>
+
+              <!-- Open the modal using ID.showModal() method -->
+              <button
+                class="text-lg font-bold text-[#F85559]"
+                onclick="my_modal_1.showModal()"
+              >
+                Details
+              </button>
+              <dialog id="my_modal_1" class="modal">
+                <div class="modal-box">
+                  <h3 class="font-bold text-lg">Hello!</h3>
+                  <p class="py-4">Press ESC key or click the button below to close</p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </div>
+          </div>
+          <div class="card bg-base-100 border-2 rounded-lg">
+            <figure class="px-10 pt-10">
+              <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-[#121212] text-2xl font-bold">
+                12.90$ - 18.85$
+              </h2>
+              <div class="border-t-2 bg-black w-full"></div>
+              <p class="text-[#12121299] text-base font-medium">Apples</p>
+
+              <div class="text-2xl mb-2">
+                <i class="fa-solid fa-star text-[#F85559]"></i>
+                <i class="fa-regular fa-star-half-stroke text-[#F85559]"></i>
+                <i class="fa-regular fa-star text-[#F85559]"></i>
+                <i class="fa-regular fa-star text-[#F85559]"></i>
+                <i class="fa-regular fa-star text-[#F85559]"></i>
+              </div>
+
+              <!-- Open the modal using ID.showModal() method -->
+              <button
+                class="text-lg font-bold text-[#F85559]"
+                onclick="my_modal_1.showModal()"
+              >
+                Details
+              </button>
+              <dialog id="my_modal_1" class="modal">
+                <div class="modal-box">
+                  <h3 class="font-bold text-lg">Hello!</h3>
+                  <p class="py-4">Press ESC key or click the button below to close</p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center mt-5">
+          <button
+          class="scroll-py-2 py-4 px-7 mt-5 text-white bg-[#F85559] rounded-lg lg:text-xl font-extrabold"
+        >Shop All</button>
+        </div>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
